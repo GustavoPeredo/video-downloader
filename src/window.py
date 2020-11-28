@@ -20,7 +20,7 @@ import locale
 import math
 import os
 
-from gi.repository import GLib, Gtk, GdkPixbuf, GObject, Handy
+from gi.repository import GLib, Gtk, Gio, Gdk, GdkPixbuf, GObject, Handy
 
 from video_downloader.util import bind_property
 
@@ -32,6 +32,7 @@ N_ = gettext.gettext
 @Gtk.Template(resource_path='/com/github/unrud/VideoDownloader/window.ui')
 class Window(Handy.ApplicationWindow):
     __gtype_name__ = 'VideoDownloaderWindow'
+    settings = Gio.Settings.new('com.github.unrud.VideoDownloader')
     error_buffer = Gtk.Template.Child()
     resolutions_store = Gtk.Template.Child()
     audio_url_wdg = Gtk.Template.Child()
@@ -54,6 +55,9 @@ class Window(Handy.ApplicationWindow):
     squeezer = Gtk.Template.Child()
     headerbar_switcher = Gtk.Template.Child()
     bottom_switcher = Gtk.Template.Child()
+    dark_mode_button = Gtk.Template.Child()
+    light_mode_button = Gtk.Template.Child()
+    about_button = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -96,6 +100,12 @@ class Window(Handy.ApplicationWindow):
                       func_a_to_b=self._add_thumbnail)
         bind_property(self.download_images_wdg, 'transition-running',
                       func_a_to_b=lambda b: b or self._clean_thumbnails())
+        self.dark_mode_button.connect('clicked', self.changeTheme)
+        self.light_mode_button.connect('clicked', self.changeTheme)
+        self.about_button.connect('clicked', self.on_about)
+        self.setup_css()
+        self.dark_mode_button.set_active(self.settings.get_boolean('dark-mode'))
+        self.changeTheme()
 
     def _update_download_progress(self, *_):
         progress = self.model.download_progress
@@ -207,3 +217,36 @@ class Window(Handy.ApplicationWindow):
     def on_headerbar_squeezer_notify(self, squeezer, event):
 	    child = squeezer.get_visible_child()
 	    self.bottom_switcher.set_reveal(child != self.headerbar_switcher)
+
+    def on_about(self, *args, **kwargs):
+        authors = ['Unrud' , 'Gustavo Machado Peredo']
+        dialog = Gtk.AboutDialog(transient_for=self, modal=True)
+        dialog.props.authors = authors
+        dialog.props.copyright = 'Copyright \xa9 2020 Unrud'
+        dialog.props.license_type = Gtk.License.GPL_3_0
+        dialog.props.logo_icon_name = 'com.github.unrud.VideoDownloader'
+        dialog.props.program_name = ('Video Downloader')
+
+        dialog.present()
+
+    def changeTheme(self, *args, **kwargs):
+        if self.dark_mode_button.get_active():
+            Gtk.Settings.get_default().set_property('gtk-application-prefer-dark-theme', True)
+            self.settings.set_boolean('dark-mode', True)
+        else:
+            Gtk.Settings.get_default().set_property('gtk-application-prefer-dark-theme', False)
+            self.settings.set_boolean('dark-mode', False)
+
+    def setup_css(self, *args, **kwargs):
+        #Setup the CSS and load it.
+        uri = 'resource:///com/github/unrud/VideoDownloader/style.css'
+        provider_file = Gio.File.new_for_uri(uri)
+
+        provider = Gtk.CssProvider()
+        provider.load_from_file(provider_file)
+
+        Gtk.StyleContext.add_provider_for_screen(
+            Gdk.Screen.get_default(),
+            provider,
+            Gtk.STYLE_PROVIDER_PRIORITY_USER
+        )
