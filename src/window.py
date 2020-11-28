@@ -51,10 +51,14 @@ class Window(Handy.ApplicationWindow):
     download_images_wdg = Gtk.Template.Child()
     error_details_expander_wdg = Gtk.Template.Child()
     error_details_revealer_wdg = Gtk.Template.Child()
+    squeezer = Gtk.Template.Child()
+    headerbar_switcher = Gtk.Template.Child()
+    bottom_switcher = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.model = self.get_application().model
+        self.squeezer.connect("notify::visible-child",self.on_headerbar_squeezer_notify)
         bind_property(self.model, 'error', self.error_buffer, 'text')
         bind_property(self.error_details_expander_wdg, 'expanded',
                       self.error_details_revealer_wdg, 'reveal-child')
@@ -199,3 +203,7 @@ class Window(Handy.ApplicationWindow):
             self.success_back_wdg.grab_focus()
         else:
             assert False
+
+    def on_headerbar_squeezer_notify(self, squeezer, event):
+	    child = squeezer.get_visible_child()
+	    self.bottom_switcher.set_reveal(child != self.headerbar_switcher)
