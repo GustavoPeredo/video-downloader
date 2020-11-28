@@ -115,7 +115,7 @@
                     "type" : "git",
                     "url" : "https://github.com/GustavoPeredo/video-downloader.git",
                     "branch" : "release",
-                    "commit" : "9a120afc59be09bc813faed2984c638cb294d145"
+                    "commit" : "b9f9f4e7fb2d0a8bd572ea61d1940f3315cee82a"
                 }
             ]
         }
