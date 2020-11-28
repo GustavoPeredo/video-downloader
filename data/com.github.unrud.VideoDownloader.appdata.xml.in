@@ -28,6 +28,14 @@
   <update_contact>unrud_AT_outlook.com</update_contact>
   <translation type="gettext">video-downloader</translation>
   <releases>
+    <release version="0.7.0" date="2020-11-25">
+      <description>
+        <ul>
+          <li>Add dark mode</li>
+          <li>Re-enabled youtube-dl</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.6.1" date="2020-10-25">
       <description>
         <ul>
