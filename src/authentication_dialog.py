@@ -75,7 +75,7 @@ class PasswordDialog(BaseAuthenticationDialog):
         return content
 
 
-@Gtk.Template(resource_path='/com/github/unrud/VideoDownloader/'
+@Gtk.Template(resource_path='/org/gustavoperedo/VideoDownloader/'
                             'authentication_dialog_login.ui')
 class LoginDialogContent(Gtk.Box):
     __gtype_name__ = 'VideoDownloaderLoginDialogContent'
@@ -83,7 +83,7 @@ class LoginDialogContent(Gtk.Box):
     password_wdg = Gtk.Template.Child()
 
 
-@Gtk.Template(resource_path='/com/github/unrud/VideoDownloader/'
+@Gtk.Template(resource_path='/org/gustavoperedo/VideoDownloader/'
                             'authentication_dialog_password.ui')
 class PasswordDialogContent(Gtk.Box):
     __gtype_name__ = 'VideoDownloaderPasswordDialogContent'

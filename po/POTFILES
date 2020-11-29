@@ -1,6 +1,6 @@
-data/com.github.unrud.VideoDownloader.appdata.xml.in
-data/com.github.unrud.VideoDownloader.desktop.in
-data/com.github.unrud.VideoDownloader.gschema.xml
+data/org.gustavoperedo.VideoDownloader.appdata.xml.in
+data/org.gustavoperedo.VideoDownloader.desktop.in
+data/org.gustavoperedo.VideoDownloader.gschema.xml
 src/authentication_dialog.py
 src/authentication_dialog_login.ui
 src/authentication_dialog_password.ui
