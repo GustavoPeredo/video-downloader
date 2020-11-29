@@ -29,10 +29,10 @@ MAX_ASPECT_RATIO = 2.39
 N_ = gettext.gettext
 
 
-@Gtk.Template(resource_path='/com/github/unrud/VideoDownloader/window.ui')
+@Gtk.Template(resource_path='/org/gustavoperedo/VideoDownloader/window.ui')
 class Window(Handy.ApplicationWindow):
     __gtype_name__ = 'VideoDownloaderWindow'
-    settings = Gio.Settings.new('com.github.unrud.VideoDownloader')
+    settings = Gio.Settings.new('org.gustavoperedo.VideoDownloader')
     error_buffer = Gtk.Template.Child()
     resolutions_store = Gtk.Template.Child()
     audio_url_wdg = Gtk.Template.Child()
@@ -224,7 +224,7 @@ class Window(Handy.ApplicationWindow):
         dialog.props.authors = authors
         dialog.props.copyright = 'Copyright \xa9 2020 Unrud'
         dialog.props.license_type = Gtk.License.GPL_3_0
-        dialog.props.logo_icon_name = 'com.github.unrud.VideoDownloader'
+        dialog.props.logo_icon_name = 'org.gustavoperedo.VideoDownloader'
         dialog.props.program_name = ('Video Downloader')
 
         dialog.present()
@@ -239,7 +239,7 @@ class Window(Handy.ApplicationWindow):
 
     def setup_css(self, *args, **kwargs):
         #Setup the CSS and load it.
-        uri = 'resource:///com/github/unrud/VideoDownloader/style.css'
+        uri = 'resource:///org/gustavoperedo/VideoDownloader/style.css'
         provider_file = Gio.File.new_for_uri(uri)
 
         provider = Gtk.CssProvider()

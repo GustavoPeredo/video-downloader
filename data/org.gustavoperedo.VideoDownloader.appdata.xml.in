@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2019 Unrud <unrud@outlook.com> -->
 <component type="desktop-application">
-  <id>com.github.unrud.VideoDownloader</id>
+  <id>org.gustavoperedo.VideoDownloader</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
   <name>Video Downloader</name>
@@ -21,17 +21,18 @@
       Based on youtube-dl.
     </p>
   </description>
-  <launchable type="desktop-id">com.github.unrud.VideoDownloader.desktop</launchable>
-  <url type="bugtracker">https://github.com/Unrud/video-downloader/issues</url>
-  <url type="homepage">https://github.com/Unrud/video-downloader</url>
-  <developer_name>Unrud</developer_name>
-  <update_contact>unrud_AT_outlook.com</update_contact>
+  <launchable type="desktop-id">org.gustavoperedo.VideoDownloader.desktop</launchable>
+  <url type="bugtracker">https://github.com/GustavoPeredo/video-downloader/issues</url>
+  <url type="homepage">https://github.com/GustavoPeredo/video-downloader</url>
+  <developer_name>Original: Unrud, Current: Gustavo Peredo</developer_name>
+  <update_contact>gustavomperedo@protonmail.com</update_contact>
   <translation type="gettext">video-downloader</translation>
   <releases>
     <release version="0.7.0" date="2020-11-25">
       <description>
         <ul>
           <li>Add dark mode</li>
+          <li>Ui improvements</li>
           <li>Re-enabled youtube-dl</li>
         </ul>
       </description>
