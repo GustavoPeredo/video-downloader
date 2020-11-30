@@ -31,7 +31,7 @@ N_ = gettext.gettext
 
 class Application(Gtk.Application, Handler):
     def __init__(self):
-        super().__init__(application_id='org.gustavoperedo.VideoDownloader',
+        super().__init__(application_id='io.github.gustavoperedo.VideoDownloader',
                          flags=Gio.ApplicationFlags.NON_UNIQUE)
         self.add_main_option(
             'url', ord('u'), GLib.OptionFlags.NONE, GLib.OptionArg.STRING,

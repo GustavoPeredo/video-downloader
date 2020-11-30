@@ -1,8 +1,8 @@
 pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
 
 desktop_file = i18n.merge_file(
-  input: 'org.gustavoperedo.VideoDownloader.desktop.in',
-  output: 'org.gustavoperedo.VideoDownloader.desktop',
+  input: 'io.github.gustavoperedo.VideoDownloader.desktop.in',
+  output: 'io.github.gustavoperedo.VideoDownloader.desktop',
   type: 'desktop',
   po_dir: '../po',
   install: true,
@@ -17,8 +17,8 @@ if desktop_utils.found()
 endif
 
 appstream_file = i18n.merge_file(
-  input: 'org.gustavoperedo.VideoDownloader.appdata.xml.in',
-  output: 'org.gustavoperedo.VideoDownloader.appdata.xml',
+  input: 'io.github.gustavoperedo.VideoDownloader.appdata.xml.in',
+  output: 'io.github.gustavoperedo.VideoDownloader.appdata.xml',
   po_dir: '../po',
   install: true,
   install_dir: join_paths(get_option('datadir'), 'metainfo')
@@ -31,7 +31,7 @@ if appstream_util.found()
   )
 endif
 
-install_data('org.gustavoperedo.VideoDownloader.gschema.xml',
+install_data('io.github.gustavoperedo.VideoDownloader.gschema.xml',
   install_dir: join_paths(get_option('datadir'), 'glib-2.0/schemas')
 )
 
@@ -42,7 +42,7 @@ if compile_schemas.found()
   )
 endif
 
-icon_id = 'org.gustavoperedo.VideoDownloader'
+icon_id = 'io.github.gustavoperedo.VideoDownloader'
 icon_svg = icon_id + '.svg'
 install_data(icon_svg, install_dir: join_paths(
   get_option('datadir'), 'icons', 'hicolor', 'scalable', 'apps'
