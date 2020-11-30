@@ -17,18 +17,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:7
-#: data/org.gustavoperedo.VideoDownloader.desktop.in:3 src/main.py:39
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:7
+#: data/io.github.gustavoperedo.VideoDownloader.desktop.in:3 src/main.py:39
 #: src/window.ui:19
 msgid "Video Downloader"
 msgstr "Video Downloader"
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:8
-#: data/org.gustavoperedo.VideoDownloader.desktop.in:4
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:8
+#: data/io.github.gustavoperedo.VideoDownloader.desktop.in:4
 msgid "Download videos from websites like YouTube and many others"
 msgstr "YouTube などの動画サイトから動画をダウンロードします"
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:10
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:10
 msgid ""
 "Download videos from websites with an easy-to-use interface. Provides the "
 "following features:"
@@ -36,35 +36,35 @@ msgstr ""
 "使いやすいインターフェースでウェブサイトから動画をダウンロードします。以下の"
 "機能があります:"
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:15
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:15
 msgid "Convert videos to MP3"
 msgstr "動画を MP3 に変換"
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:16
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:16
 msgid "Supports password-protected and private videos"
 msgstr "パスワードで保護された閲覧制限動画のサポート"
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:17
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:17
 msgid "Download single videos or whole playlists"
 msgstr "単一の動画または再生リストに含まれる動画のダウンロード"
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:18
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:18
 msgid "Automatically selects a video format based on your quality demands"
 msgstr "指定した品質に基づいた動画形式の自動選択"
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:20
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:20
 msgid "Based on youtube-dl."
 msgstr "youtube-dl を利用しています。"
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:27
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:27
 msgid "Unrud"
 msgstr "Unrud"
 
-#: data/org.gustavoperedo.VideoDownloader.desktop.in:6
-msgid "org.gustavoperedo.VideoDownloader"
-msgstr "org.gustavoperedo.VideoDownloader"
+#: data/io.github.gustavoperedo.VideoDownloader.desktop.in:6
+msgid "io.github.gustavoperedo.VideoDownloader"
+msgstr "io.github.gustavoperedo.VideoDownloader"
 
-#: data/org.gustavoperedo.VideoDownloader.desktop.in:14
+#: data/io.github.gustavoperedo.VideoDownloader.desktop.in:14
 msgid "New Window"
 msgstr "新しいウィンドウ"
 

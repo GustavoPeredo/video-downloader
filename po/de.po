@@ -18,18 +18,18 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.3.1\n"
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:7
-#: data/org.gustavoperedo.VideoDownloader.desktop.in:3 src/main.py:39
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:7
+#: data/io.github.gustavoperedo.VideoDownloader.desktop.in:3 src/main.py:39
 #: src/window.ui:19
 msgid "Video Downloader"
 msgstr "Video Downloader"
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:8
-#: data/org.gustavoperedo.VideoDownloader.desktop.in:4
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:8
+#: data/io.github.gustavoperedo.VideoDownloader.desktop.in:4
 msgid "Download videos from websites like YouTube and many others"
 msgstr "Lade Videos von Youtube und vielen weiteren Webseiten herunter"
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:10
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:10
 msgid ""
 "Download videos from websites with an easy-to-use interface. Provides the "
 "following features:"
@@ -37,37 +37,37 @@ msgstr ""
 "Über eine einfach zu bedienende Oberfläche können Videos von vielen "
 "Webseiten heruntergeladen werden. Das Programm bietet:"
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:15
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:15
 msgid "Convert videos to MP3"
 msgstr "Videos nach MP3 zu konvertieren"
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:16
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:16
 msgid "Supports password-protected and private videos"
 msgstr "Passwortgeschütze und private Videos herunterzuladen"
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:17
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:17
 msgid "Download single videos or whole playlists"
 msgstr "Einzelne Videos und ganze Wiedergabelisten herunterzuladen"
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:18
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:18
 msgid "Automatically selects a video format based on your quality demands"
 msgstr ""
 "Automatisch das Videoformat auszuwählen, das den eigenen Qualitätsansprüchen "
 "entspricht"
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:20
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:20
 msgid "Based on youtube-dl."
 msgstr "Basiert auf youtube-dl."
 
-#: data/org.gustavoperedo.VideoDownloader.appdata.xml.in:27
+#: data/io.github.gustavoperedo.VideoDownloader.appdata.xml.in:27
 msgid "Unrud"
 msgstr "Unrud"
 
-#: data/org.gustavoperedo.VideoDownloader.desktop.in:6
-msgid "org.gustavoperedo.VideoDownloader"
-msgstr "org.gustavoperedo.VideoDownloader"
+#: data/io.github.gustavoperedo.VideoDownloader.desktop.in:6
+msgid "io.github.gustavoperedo.VideoDownloader"
+msgstr "io.github.gustavoperedo.VideoDownloader"
 
-#: data/org.gustavoperedo.VideoDownloader.desktop.in:14
+#: data/io.github.gustavoperedo.VideoDownloader.desktop.in:14
 msgid "New Window"
 msgstr "Neues Fenster"
 

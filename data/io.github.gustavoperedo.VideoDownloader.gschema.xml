@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="video-downloader">
-  <enum id="org.gustavoperedo.VideoDownloader">
+  <enum id="io.github.gustavoperedo.VideoDownloader">
     <value value="0" nick="audio"/>
     <value value="1" nick="video"/>
   </enum>
 
-  <schema id="org.gustavoperedo.VideoDownloader" path="/org/gustavoperedo/VideoDownloader/">
+  <schema id="io.github.gustavoperedo.VideoDownloader" path="/io.github.gustavoperedo/VideoDownloader/">
     <key type="s" name="download-folder">
       <default>'xdg-download/VideoDownloader'</default>
     </key>
@@ -18,7 +18,7 @@
       <default>false</default>
     </key>
 
-    <key name="mode" enum="org.gustavoperedo.VideoDownloader">
+    <key name="mode" enum="io.github.gustavoperedo.VideoDownloader">
       <default>'audio'</default>
     </key>
 
